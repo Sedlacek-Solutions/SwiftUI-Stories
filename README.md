@@ -1,6 +1,7 @@
 # ProgressTabView
 
-A SwiftUI package that provides a custom tab view with progress tracking functionality. Each tab can have its own duration and automatically advances when completed.
+A SwiftUI package that provides a custom tab view with progress tracking functionality. <br>
+Each tab can have its own duration and automatically advances when completed.
 
 ## Features
 
@@ -34,6 +35,9 @@ Add ProgressTabView to your project through Xcode:
 1. First, create your tab content by conforming to `ProgressTabContent`:
 
 ```swift
+import ProgressTabView
+import SwiftUI
+
 enum ProgressTab: ProgressTabContent, CaseIterable {
     case first
     case second
@@ -63,6 +67,9 @@ enum ProgressTab: ProgressTabContent, CaseIterable {
 2. Then, use `ProgressTabView` in your SwiftUI view:
 
 ```swift
+import ProgressTabView
+import SwiftUI
+
 struct ContentView: View {
     var body: some View {
         ProgressTabView(tabs: ProgressTab.allCases)
