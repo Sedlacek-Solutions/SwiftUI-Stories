@@ -4,17 +4,16 @@
 import PackageDescription
 
 let package = Package(
-    name: "ProgressTabView",
+    name: "SwiftUI-Stories",
     defaultLocalization: "en",
     platforms: [.iOS(.v17), .macOS(.v14)],
     products: [
         .library(
-            name: "ProgressTabView",
-            targets: ["ProgressTabView"]),
+            name: "Stories",
+            targets: ["Stories"]),
     ],
     targets: [
         .target(
-            name: "ProgressTabView"),
-
+            name: "Stories"),
     ]
 )
